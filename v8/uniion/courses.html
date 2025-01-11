@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIION - Cursos de Economia</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/cores.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header igual ao index.html -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">UNI<span class="logo-highlight">ION</span></span>
+                </a>
+            </div>
+            
+            <!-- Menu Desktop -->
+            <ul class="nav-menu">
+                <li>
+                    <a href="index.html#treine" class="nav-train-button">
+                        <i class="fas fa-gamepad"></i> 
+                        Treine
+                        <span class="desktop-points">+10 XP/treino</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html" class="active">
+                        <i class="fas fa-book-open"></i> 
+                        Cursos
+                        <span class="desktop-badge">3</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#perfil">
+                        <i class="fas fa-user"></i> 
+                        Perfil
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#conquistas">
+                        <i class="fas fa-trophy"></i> 
+                        Conquistas
+                        <span class="desktop-badge">5</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Controles do Header -->
+            <div class="header-controls">
+                <!-- Sistema de XP Desktop -->
+                <div class="desktop-xp-container">
+                    <div class="xp-info">
+                        <div class="xp-level-badge">
+                            <span class="current-level">1</span>
+                        </div>
+                        <div class="xp-details">
+                            <div class="xp-progress-bar">
+                                <div class="xp-progress" style="width: 60%"></div>
+                            </div>
+                            <span class="xp-count">120/200 XP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botão de tema -->
+                <button class="theme-toggle" aria-label="Alternar tema">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Menu Mobile Fixo -->
+    <div class="mobile-nav">
+        <a href="index.html#treine" class="mobile-nav-item">
+            <i class="fas fa-gamepad"></i>
+            <span>Treine</span>
+        </a>
+        <a href="courses.html" class="mobile-nav-item">
+            <i class="fas fa-book-open"></i>
+            <span>Cursos</span>
+            <span class="points-badge">3</span>
+        </a>
+        <a href="index.html#jogar" class="mobile-nav-item mobile-nav-main">
+            <div class="xp-circle">
+                <span class="xp-level">1</span>
+                <span class="xp-text">Nível</span>
+            </div>
+        </a>
+        <a href="index.html#perfil" class="mobile-nav-item">
+            <i class="fas fa-user"></i>
+            <span>Perfil</span>
+            <span class="points-badge">120 XP</span>
+        </a>
+        <a href="index.html#conquistas" class="mobile-nav-item">
+            <i class="fas fa-trophy"></i>
+            <span>Conquistas</span>
+            <span class="points-badge">5</span>
+        </a>
+    </div>
+
+    <main class="learning-journey">
+        <section class="journey-hero">
+            <div class="journey-container">
+                <div class="level-badge">
+                    <i class="fas fa-star"></i> Fase 1: Fundamentos Financeiros
+                </div>
+                <h1>Aprenda <span class="highlight">passo a passo</span></h1>
+                <p class="journey-subtitle">Complete as missões e desbloqueie novos conhecimentos</p>
+
+                <div class="journey-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-fire"></i>
+                        <div class="stat-info">
+                            <span class="stat-value">5</span>
+                            <span class="stat-label">Dias seguidos</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-star"></i>
+                        <div class="stat-info">
+                            <span class="stat-value">240</span>
+                            <span class="stat-label">XP Total</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journey-path">
+                    <!-- Módulo Atual -->
+                    <div class="journey-module active">
+                        <div class="module-content">
+                            <div class="module-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="module-info">
+                                <div class="module-header">
+                                    <h3>Conceitos Básicos</h3>
+                                    <span class="xp-badge">+50 XP</span>
+                                </div>
+                                <div class="level-progress">
+                                    <div class="progress-circles">
+                                        <span class="circle completed" data-tooltip="O que é Economia?"></span>
+                                        <span class="circle completed" data-tooltip="Oferta e Demanda"></span>
+                                        <span class="circle current" data-tooltip="Mercado e Preços"></span>
+                                        <span class="circle" data-tooltip="Sistema Financeiro"></span>
+                                    </div>
+                                    <span class="progress-text">2/4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Próximo Módulo -->
+                    <div class="journey-module">
+                        <div class="module-content">
+                            <div class="module-icon">
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                            <h3>Poupança</h3>
+                            <div class="level-progress">
+                                <div class="progress-circles">
+                                    <span class="circle"></span>
+                                    <span class="circle"></span>
+                                    <span class="circle"></span>
+                                </div>
+                                <span class="progress-text">0/3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Módulo Bloqueado -->
+                    <div class="journey-module locked">
+                        <div class="module-content">
+                            <div class="module-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Investimentos</h3>
+                            <div class="lock-info">
+                                <i class="fas fa-lock"></i>
+                                <span>Complete o módulo anterior</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mais módulos bloqueados -->
+                    <div class="journey-module locked">
+                        <div class="module-content">
+                            <div class="module-icon">
+                                <i class="fas fa-building-columns"></i>
+                            </div>
+                            <h3>Mercado Financeiro</h3>
+                            <div class="lock-info">
+                                <i class="fas fa-lock"></i>
+                                <span>Complete os módulos anteriores</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer igual ao index.html -->
+
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/mobileNav.js"></script>
+    <script src="js/points.js"></script>
+</body>
+</html> 

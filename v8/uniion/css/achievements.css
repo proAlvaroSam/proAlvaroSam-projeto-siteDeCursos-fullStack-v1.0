@@ -1,0 +1,167 @@
+.achievements-page {
+    padding-top: 80px;
+    min-height: 100vh;
+    background: var(--background);
+}
+
+.achievements-hero {
+    padding: 4rem 2rem;
+}
+
+.achievements-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+}
+
+.achievements-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+}
+
+.achievements-stats {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.achievement-card {
+    background: var(--background);
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.achievement-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--gradient-primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.achievement-info {
+    flex: 1;
+}
+
+.achievement-info h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.achievement-info p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.achievement-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.unlock-date {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.progress-text {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+
+/* Estados das conquistas */
+.achievement-card.locked {
+    opacity: 0.7;
+}
+
+.achievement-card.locked .achievement-icon {
+    background: linear-gradient(135deg, #4B5563, #1F2937);
+}
+
+.achievement-card.unlocked {
+    border-color: var(--primary-light);
+}
+
+.achievement-card.unlocked .achievement-icon {
+    animation: glow 2s infinite;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(124, 58, 237, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(124, 58, 237, 0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .achievements-hero {
+        padding: 2rem 1rem;
+    }
+
+    .achievements-container {
+        padding: 1.5rem;
+    }
+
+    .achievements-stats {
+        flex-direction: column;
+    }
+
+    .achievement-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .achievement-icon {
+        margin: 0 auto;
+    }
+
+    .achievement-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* Tema escuro */
+[data-theme="dark"] .achievement-card.locked {
+    background: rgba(31, 41, 55, 0.5);
+}
+
+[data-theme="dark"] .achievement-card.unlocked {
+    border-color: var(--primary-light);
+    box-shadow: 0 4px 20px rgba(139, 92, 246, 0.15);
+} 

@@ -1,0 +1,81 @@
+<head>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/cores.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+<!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+    
+<header class="header">
+    <nav class="nav-container">
+        <div class="logo">
+            <a href="../index.html">
+                <span class="logo-text">UNI<span class="logo-highlight">ION</span></span>
+            </a>
+        </div>
+        
+        <!-- Menu Desktop -->
+        <ul class="nav-menu">
+            <li>
+                <a href="#treine" class="nav-train-button">
+                    <i class="fas fa-gamepad"></i> 
+                    Treine
+                    <span class="desktop-points">+10 XP/treino</span>
+                </a>
+            </li>
+            <li>
+                <a href="../courses.html">
+                    <i class="fas fa-book-open"></i> 
+                    Cursos
+                    <span class="desktop-badge">3</span>
+                </a>
+            </li>
+            <li>
+                <a href="#perfil">
+                    <i class="fas fa-user"></i> 
+                    Perfil
+                </a>
+            </li>
+            <li>
+                <a href="../html/achievements.html">
+                    <i class="fas fa-trophy"></i> 
+                    Conquistas
+                    <span class="desktop-badge">5</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Controles do Header -->
+        <div class="header-controls">
+            <!-- Sistema de XP Desktop -->
+            <div class="desktop-xp-container">
+                <div class="xp-info">
+                    <div class="xp-level-badge">
+                        <span class="current-level">1</span>
+                    </div>
+                    <div class="xp-details">
+                        <div class="xp-progress-bar">
+                            <div class="xp-progress" style="width: 60%"></div>
+                        </div>
+                        <span class="xp-count">120/200 XP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão de tema -->
+            <button class="theme-toggle" aria-label="Alternar tema">
+                <i class="fas fa-sun sun-icon"></i>
+                <i class="fas fa-moon moon-icon"></i>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<script src="../js/main.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/mobileNav.js"></script>
+<script src="../js/points.js"></script>
