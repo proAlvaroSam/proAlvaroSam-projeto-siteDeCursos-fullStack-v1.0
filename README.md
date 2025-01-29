@@ -1,6 +1,6 @@
 # 📚 Uniion
 
-Bem-vindo ao repositório do EconLearn! Este projeto é um site em desenvolvimento, inspirado no estilo do Duolingo, onde os usuários podem aprender economia de forma interativa e divertida. O site está sendo desenvolvido como um passatempo, e pretendo utilizar as tecnologias React e TypeScript.
+Bem-vindo ao repositório da Uniion! Este projeto é um site em desenvolvimento, inspirado no estilo do Duolingo, onde os usuários podem aprender economia de forma interativa e divertida. O site está sendo desenvolvido como um passatempo, e pretendo utilizar as tecnologias React e TypeScript.
 
 ## Funcionalidades Principais 🎯
 
