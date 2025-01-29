@@ -8,7 +8,6 @@ Bem-vindo ao repositório da Uniion! Este projeto é um site em desenvolvimento,
 <span align="center">
 <img src="https://github.com/proAlvaroSam/proAlvaroSam-projeto-siteDeCursos-fullStack-v1.0/blob/main/Imagens%20Readme/site%20mobile%20noturno.png?raw=true" width="300px" />
 </span>
-<div></div>
 <span align="center">
 <img src="https://github.com/proAlvaroSam/proAlvaroSam-projeto-siteDeCursos-fullStack-v1.0/blob/main/Imagens%20Readme/site%20mobile%20claro.png?raw=true" width="300px" />
 </span>
